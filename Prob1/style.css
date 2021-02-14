@@ -2,8 +2,17 @@ table, td, th {
   	border: 1px solid #2e2e2d;
 }
 
+th {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+td {
+	max-width: 100px;
+	padding-right: 20px;
+}
+
 
 table {
-	width: 400px;
   	border-collapse: collapse;
 }

@@ -16,8 +16,11 @@
 			'william', 'elizabeth',
 			'david'  , 'barbara',
 			'richard', 'susan',
-			'joseph' , 'jessica')
+			'joseph' , 'jessica');
+			$vowels = array('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U');
 		?>
+
+
 		<table>
 			<tr>
 				<th colspan='6'>List of names</th>
@@ -38,7 +41,8 @@
 				$x = strlen($names[$i]);
 				echo "<td>$x</td>";
 				echo "<td>".ucfirst($names[$i])."</td>";
-				echo "<td>".str_replace('a', '@', $names[$i])."</td>";
+
+				echo "<td>".str_replace($vowels, '@', $names[$i])."</td>";
 				echo "<td>".(int)strpos($names[$i], 'a')."</td>";
 				echo "<td>".strrev($names[$i])."</td>";
 				echo "</tr>";
