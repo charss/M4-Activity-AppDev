@@ -72,11 +72,7 @@
 				echo "<td>".strrev($names[$i])."</td>";
 				echo "</tr>";
 			}
-
 			?>
 		</table>
-
-
 	</body>
-
 </html>
